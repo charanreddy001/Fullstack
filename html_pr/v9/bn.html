@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            videos
+        </title>
+    </head>
+    <body align = "center">
+        <h1>
+            video
+        </h1>
+        <video src="vids/watering.mp4"  loop autoplay muted width = 71% ></video><br><br><br>
+        <!-- if we keep autoplay muted it will play continuosly and we can also remove controls -->
+
+        <video controls loop width = "65%">
+            <source src = "vids/girl_vid.mp4"> <!--if this fails next file(down)-->
+            <source src = "vids/girl_vid.ogg">
+            <!-- you can add multiples files here if the first file is not supported by the browser then it will go to the second file -->
+        </video>
+
+    </body>
+</html>
