@@ -1,0 +1,17 @@
+#box img { /* if you just keep #box then you can't keep the object in middle **many functions of image only work if you add img there*/
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+#content {
+    border: 3px solid pink;
+    width:  150px;
+    height: 200px;
+    overflow: auto;/*if you keep overflow is auto then it will keep scroll only for "Y" it will adjust x automatically*/
+    overflow:hidden; /* automatically deletes the extra text */
+    overflow: visible;
+    overflow:scroll;
+    overflow-x: hidden;
+}

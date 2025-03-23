@@ -1,0 +1,58 @@
+body {
+    background-color: rgba(7, 5, 5, 0.942);
+}
+
+h1,
+h2,
+p {
+    color:aqua;
+}
+
+/* padding means inside gap */
+/* whereas margin means gap from outside like gap from borders of browser*/
+#chi {
+    border-style:solid;
+    margin:40px;
+    padding:22px;
+}
+
+#cha {
+    border-style: dashed;
+    border-width:4px;
+    padding:19px;
+    margin:20px;
+}
+
+#too {
+    border-style:double;
+    border-style:inset;
+    padding:20px;
+    margin:22px;
+    border-width:5x;
+}
+
+#jui {
+    border-style:groove;
+    border-width:5px;
+    border-color:gold;
+    margin:auto;
+    padding:23px;
+}
+
+/* inset means line coming like inside(upside one are thick and downone are light) 
+outset means line coming like outside(downside one are thick and upside one are light)*/
+
+h1 {
+    padding:30px;
+    margin:30px;
+    border-bottom-style: dashed;
+    border-bottom-width:15px;
+    border-bottom-color:white;
+    border-top-style:dotted;
+    border-top-color:orange;
+    border-right-style:dashed;
+    border-right-color:blueviolet;
+    border-left-style:solid;
+    border-left-color:purple;
+    border-left-width:12px;
+}

@@ -1,0 +1,19 @@
+html {
+    background-color:antiquewhite;
+}
+
+body {
+    background:linear-gradient(orange,skyblue);
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin:0px;
+    /* background-attachment: fixed; */
+}
+
+h1 {
+    margin:0px;
+}
+
+p {
+    margin:0px;
+}

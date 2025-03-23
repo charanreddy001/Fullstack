@@ -1,0 +1,84 @@
+* {  /* it means to apply for all*/
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: serif;
+    text-align:center;
+    margin:10px;
+    font-size: 40px;
+}
+
+nav ul {
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding:12px;
+}
+
+li a {
+    text-decoration: none;
+    font-size:20px;
+    transition:all 0.6s ease-in-out;
+}
+
+li a:hover {
+    color:blueviolet;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:150px 150px 150px;
+    /* grid-template-rows: 150px 150px; */
+    /*professional way (Fractions)*/        
+    grid-template-columns: repeat(3, 1fr);
+    /* use repeat if it is same for all */
+
+    grid-template-columns:150px 150px 150px;
+    grid-template-rows:repeat(3,150px);
+    /* row-gap: 1px; 
+    column-gap:1px;
+    gap:1px 1px; */
+
+    grid-template-rows: minmax(150px,auto);
+    /*this keeps that content not to overflow*/
+    align-items: start;
+    align-items:end;
+
+    justify-content:end;
+    justify-content:center;
+    
+}
+
+.item {
+    border:2px red solid;
+    color:#f3ecf3;
+    background-color: #f975a1;
+    padding:15px;
+}
+
+.item:nth-child(2) {
+    background-color: aqua;
+}
+
+.item:nth-child() {
+    grid-row: 3;
+    /* grid-column:2 / 3;
+    grid-column-start: 1;
+    grid-column-end:3; */
+    grid-row: span 2;
+}
+
+.item:nth-child(3) {
+    background-color: #333;
+    grid-row: 1 / 3; /* using this notation is easy and good */
+}

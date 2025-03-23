@@ -1,0 +1,43 @@
+body {
+    background-color:beige;
+}
+
+#chi {
+    /* you can also give negative pixels */
+    border:3px,solid,blueviolet;
+    margin-left:-50px;
+    margin-top:0px;
+    padding:20px;
+}
+
+h2.mass {
+    color:brown;
+}
+
+/* for a div you can do like this */
+#jk {
+    color:blue;
+}
+
+#jk #chi {
+    color:aqua;
+}
+
+#jk #cha {
+    border:30px,solid,darkgoldenrod;
+    padding-left:60px;
+    padding-top:30px;
+    padding-bottom:22px;
+    padding-right:6px;
+}
+
+#jk #too {
+    border:5px,solid,khaki;
+    padding:32px 22px;  /* here first one is for ||top&bottom|| & next one for ||left&right|| */
+    /* otherwise you can also give clock-wise just like border giving (top->right->bottom->left) */
+}
+
+/*headings are block level means thier border come to end of browser whereas no-block level like "a" just get thier boxes up to thier text*/
+#next {
+    text-align: justify;
+}

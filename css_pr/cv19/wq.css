@@ -1,0 +1,25 @@
+ul {
+    background-color: #000000b8;
+    color:cyan;
+    list-style-type:none; /*to get rid of symbols beside */
+    margin:0px;
+    padding:0px;
+    overflow:hidden;/*if you dont keep overflow hidden then background color will not appear*/
+}
+     
+
+li a {
+    color:cyan;
+    text-decoration: none;
+    float:left;
+    padding:14px 10px;
+    border-right: 2px solid #000;
+    text-align: center;
+    min-width: 10px;
+    transition: all 0.9s; /* for smooth transition of color*/
+}
+
+li a:hover {
+    background-color: #000000fa;
+    color: aliceblue;
+}

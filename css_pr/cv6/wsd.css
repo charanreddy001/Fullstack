@@ -1,0 +1,16 @@
+html {
+    background-image: url("picc/tree.jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+
+body {
+    color:antiquewhite;
+    font-weight:10;
+}
+
+a {
+    color:white;
+}

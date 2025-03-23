@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(245, 214, 167);
+}
+
+h1 {
+    position: static;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blue;
+}
+
+h1:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/*h1 {
+    position:fixed;
+    margin:0px;
+    margin-bottom: 14px;
+    margin-right:14px;
+    bottom:0px;
+    right:0px;
+}*/
+
+#ass {
+    position: fixed;
+    margin: 0px;
+    margin-bottom: 14px;
+    margin-right: 14px;
+    bottom: 0px;
+    /* here top || bottom || left || right means distances from those directions  */
+    right: -650px;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+#lanj {
+    position: sticky;
+    top: 0px;
+    border: 4px double black;
+    text-align: center;
+    padding: 9px;
+    background-color: aqua;
+    color: black;
+    z-index: 1;
+}
+
+#big {      /*REMEBER (ABSOLUTE & RELATIVE) WILL OVERLAP THE CONTENT*/
+    position: relative;
+    /*relative means moving the object from it's original position to a new position by applying how much to move from that direction*/
+    top: 130px;
+    border: 2px solid black;
+    width: 360px;
+    height: 360px;
+}
+
+#small {        /* parent of this one is big box*/
+    position:absolute;/*absolute means moving the object from it's parent position to a new position by applying how much to move from that direction*/
+    bottom:30px;
+    right:30px;
+    border: 2px solid black;
+    margin: auto auto;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(247, 151, 35);
+}

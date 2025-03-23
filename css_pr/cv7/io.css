@@ -1,0 +1,29 @@
+body{
+    background-color:azure;
+}
+
+#chi {
+    font-size:20px;
+    border:2px,dashed,blueviolet;
+    padding:20px;
+    margin-top:28px;
+    margin-bottom:10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#cha {
+    padding:21px;
+    border:3px,black,solid;
+    margin:20px 19px 20px 24px;
+    /* this is of order top right bottom left like cyclic fashion */
+}
+
+#too {
+    border:2px,solid,palegreen;
+    margin:auto;
+    /* margin: 3%; */
+    width:300px;
+    margin-left: auto;
+    /*this will automatically adjust margin with respect to browsers size */
+}

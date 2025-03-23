@@ -1,0 +1,37 @@
+#qwerty {
+    margin:3px auto;
+    width:100px;
+    text-align:center;
+    text-decoration: none;    
+}
+
+/*if you do not keep it as "a" then color will not be changed*/
+a:link {
+    color:rgb(241, 244, 40);
+    text-decoration: none;
+}
+
+a:hover {
+    color:lawngreen;
+    font-size:44px;
+    margin:-10px;
+}
+
+
+a:visited {
+    color:wheat;
+}
+
+/*if you do not keep it as "a" then color will not be changed*/
+h1 {
+    background-color:aquamarine;
+    color:black;
+    padding:20px;
+    margin:0px;
+    text-align: center;
+}
+
+h1:hover {
+    background-color:black;
+    color:aquamarine;
+}

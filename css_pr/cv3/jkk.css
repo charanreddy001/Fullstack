@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'sans-serif';
+    font-size: 44px;
+    color:rgb(232, 65, 19);
+    text-decoration: underline;
+    
+}
+
+p {
+    font-family: 'ink free, arial', 'sans-serif'; /* same like html if first one not present then it goes to second one*/
+    font-size: 22px;
+    color:rgb(96, 18, 205);
+    font-weight: 100;
+}
+/*font weight is amount of boldness if more then it is more bold*/
+
+body {
+    background-color:rgb(35, 221, 242);
+}
+
+h2 {
+    color:brown;
+    font-size:38px; 
+}

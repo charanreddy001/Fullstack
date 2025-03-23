@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(169, 192, 212);
+}
+
+img {
+    float:left;
+    margin-right:10px;
+
+    border:double;
+}
+
+p {
+    text-align:justify;
+}
+/*if you dont want a paragraph to be beside that image then we use clear */
+/* and also clear in both side means then even image is in left or right that para will not be beside image*/
+
+#lanja {
+    clear:both;
+}

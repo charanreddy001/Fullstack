@@ -1,0 +1,44 @@
+h1 {
+    background-color: blueviolet;
+    font-family: serif;
+    text-align:center;
+    padding:12px;
+}
+
+p {
+    width:150px;
+    height:150px;
+    background-color: cyan;
+    color:#000;
+    line-height: 150px; /*it is the main thing that get those words in middle */
+    text-align: center;
+    font-size: large;
+    margin: 20px;
+}
+
+#erripuk { /*only one transform function works all functions below will be overridden*/
+    transform: translatex(30px);
+    transform: translatey(-30px);
+    transform: translate(10px, 10px);
+    /*transform means just moving object */
+}
+
+#id3 {
+    transform: rotatex(60deg);
+    transform: rotateY(70deg);
+    transform: rotatez(59deg);
+}
+
+#id4 {/*things written up will be overridden*/
+    margin:auto;
+    transform:scalex(1.9);
+    transform:scaley(2.0);
+}
+
+#id22 {/*just it will bend that object */
+    
+    transform: skewX(50deg);
+    transform: skewY(40deg);
+
+    transform: translate(30px,30px) rotate(30deg) scale(1.5) skew(40deg)/*you can do all those changes in single line for implementation otherwise those will be overridden*/
+}

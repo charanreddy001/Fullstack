@@ -1,0 +1,43 @@
+/*first there are many types of display they are:
+1. block (just like h1 it occupy full space from left to right * it can have width) 
+if you apply block to inline element then it go to next line and take space.
+2. inline (it just occupy little space it can be fitted in a line like continously in a line *it cannot have width)
+3. block-inline (it can be fitted in a line and also can be given width)
+4. none ( the element just disappears from the screen )*/
+
+span { 
+    display: inline-block;
+    border: 2px solid rgb(64, 59, 13);
+    width:200px;
+} 
+
+/*span {
+    display:inline;
+} */
+
+
+/*  very important */
+/* if you want to position images where ever you like then first set all images position to "absolute" so that all images come to one place */
+/* then set the position of image to relative then move image from the parent with top bottom side values */
+
+#box img {
+    position: absolute;
+    width:300px;
+    border: 3px;
+}
+
+#pic2 {
+    position:relative;
+    bottom:2px;
+    left:8px;   
+}
+
+#pic3 {
+    position:relative;
+    bottom:1px;
+    left:3px;
+    z-index:3;
+}
+
+/*z -index decides which image(anything) has to be on top highest number will be on top lowest will be on bottom */
+/*you can change z-index of images and check*/

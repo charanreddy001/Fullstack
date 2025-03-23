@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:arial;
+    font-size: 18px;
+    line-height:1.5;
+}
+
+/*CSS grid area*/
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+    grid-template-rows: 100px 1fr 72px;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.main > div {
+    background-color: #e0dede;
+    padding:20px;
+    border: #000 solid 1px;
+}
+
+.header {
+    grid-area: header;
+    font-size: 32px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+    background-color:#ddc8ff !important;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}

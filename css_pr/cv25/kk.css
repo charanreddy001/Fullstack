@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: Arial;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+header h1 {
+    line-height: 1.3;
+}
+
+.thin {
+    color: #777;
+    font-weight: normal;
+}
+
+header p {
+    margin-top:10px;
+    line-height: 1.6; /*this increases distance between the lines*/
+}
+
+.grid {
+    display:grid;
+    grid-template-areas: 
+    'card1 card2 card3'
+    'card1 card4 card3';
+    gap:10px;
+}
+
+.item {
+    background-color: #edecec;
+    height:170px;
+    width:220px;
+    border-top:5px solid rgb(17, 22, 17);
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding:10px;  
+}
+
+.item p{
+    margin-top: 10px;
+}
+
+.card1 {
+    grid-area:card1;
+    border-color:#0255c1;
+    align-self: center;
+}
+
+.card2 {
+    grid-area:card2;
+    border-color: #25c102;
+}
+
+.card3 {
+    grid-area:card3;
+    border-color: #e34203;
+    align-self:center;
+}
+
+.card4 {
+    grid-area:card4;
+    border-color: #8802c1;
+}
+
+@media (min-width: 575px) and (max-width: 900px) {
+    .grid {
+        grid-template-areas: 
+        'card1 card2'
+        'card3 card4';
+    }
+}
+
+@media (max-width: 574px) {
+    .container {
+        height: auto;
+        padding-bottom: 60px;
+    }
+    header { /*this helps us to keep the tab not go further minimisation*/
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .item {
+        width: 90%;
+        margin: auto;
+    }
+    .grid {
+        grid-template-areas: 
+        'card1'
+        'card2'
+        'card3'
+        'card4';
+    }
+}
