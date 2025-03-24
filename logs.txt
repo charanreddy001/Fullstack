@@ -1,0 +1,11 @@
+CSS: you have to finish transition property video.
+
+in flex-box align-content:
+see history
+
+JAVA SCRIPT:
+higher order functions are the functions which call the other functions by taking arguments
+
+literally there is no difference between call and apply in JavaScript (Tutorial-38) except syntax 
+Syntax for call: student.marks.call(s1,23,23,43)
+Syntax for apply: student.marks.apply(s1,[23,12,89])
