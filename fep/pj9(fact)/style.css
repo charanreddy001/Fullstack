@@ -1,0 +1,84 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid black;
+    width:500px;
+    height: 200px;
+    background-color: rgba(40, 40, 106, 0.701);
+    /* text-align: center; */
+}
+
+.container #head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: 2px solid black;
+    margin-bottom: 16px;
+    background-color: rgba(41, 76, 218, 0.863);
+    color: #fff;
+}
+
+.whole {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* you need to add this for window to appear in middle 
+    normally this takes less space if you dont give this it will not come in middle */
+}
+
+.gett {
+    /* border: 2px solid black; */
+    height: 74px;
+    margin-bottom: 8px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.gett #inp {
+    width:300px;
+    height: 35px;
+    border-radius: 5px;
+    border-top-right-radius: none;
+    border: none;
+    outline: none;
+    padding:10px;
+    font-size: 18px;
+}
+
+.gett #btn {
+    width:100px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: -2px;
+    border: none;
+    font-size: 15px;
+}
+
+.gett #btn:hover {
+    background-color: rgba(41, 76, 218, 0.863);
+    color: #fff;
+}
+
+#inp:invalid {
+    border: 2px solid #ff4444;
+    animation: shake 0.5s;  /* only apply when you press "e" */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

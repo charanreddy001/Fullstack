@@ -1,0 +1,142 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CONTAINER: centers content with a fixed size */
+  .container {
+    perspective: 500px;
+    width: 480px;
+    height: 650px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid salmon; */
+    position: relative; /* enables absolute positioning for child elements */
+  }
+  
+  /* CARD: styled inner container with subtle shadow & rounded corners */
+  .card {
+    transform-style: preserve-3d;
+    width: 420px;
+    height: 600px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.571);
+    position: relative;
+    /* overflow: hidden;  most brutal mistake ever-made*/
+    /* transition: all 0.1s ease-in-out; */
+  }
+   
+  /* IMAGE BOX: wrapper for image (if needed for additional styling) */
+  .imgbox {
+    transform-style: preserve-3d;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* IMAGE: centered within its container */
+  .imgbox img {
+    width: 380px; /* using pixel value to avoid unexpected large sizes on big screens */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    transition: all 0.5s ease;
+  }
+  
+  /* CIRCLE: decorative circular element behind the image */
+  .circle {
+    width: 326px;
+    height: 330px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 255, 255, 0.767),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+  }
+
+  .desc {
+    /* border: 2px solid black; */
+    transform-style: preserve-3d;
+    width:96%;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .desc h2 {
+    transition: all 0.5s ease;
+    text-align: center;
+    color: red;
+  }
+
+  .desc p {
+    font-weight: normal;
+    text-align: justify;
+    color: rgba(3, 29, 10, 0.847);
+  }
+
+  .processors {
+    width: 98%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* text-align: center; */
+  }
+
+  .processors #proc {
+    /* border: 2px solid black; */
+    text-align: left;
+    margin-left: 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: rgb(58, 236, 30);
+    /* margin: 4px auto; */
+  } 
+  
+  .processors .butt {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .processors button {
+    width: 48px;
+    border: none;
+    background: cadetblue;
+    letter-spacing: 2px;
+    padding:2px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .buybox button{
+    width: 380px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 0px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.368);
+  }
+
+  .buybox button:hover {
+    background: red;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .butt .active {
+    background: red;
+    color: #fff;
+  }

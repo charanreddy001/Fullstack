@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body {
+    margin:0px;
+    /* box-sizing:border-box; */
+}
+
+#bg {
+    position: relative;
+    background: linear-gradient(rgb(158, 205, 205),rgb(93, 211, 211));
+    height: 100vh;
+}
+
+#bg h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    margin: 0px;
+    font-family: "Akaya Telivigala", system-ui;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+#bg ul {
+    margin:0px;
+}
+
+#bg ul li {
+    list-style:none;
+    border:1px solid black;
+    position: absolute;
+    background-color: rgb(235, 222, 222);
+}
+
+#squares li {
+    position:absolute;
+    opacity: 0.5;
+    width:50px;
+    height:50px;
+    animation: square 6s linear infinite;
+}
+
+#squares li:nth-child(1) {
+    top:7vh;
+    left:10vw;
+}
+
+#squares li:nth-child(2) {
+    bottom:40vh;
+    left:10vw;
+    animation-delay: 2s;
+}
+
+#squares li:nth-child(3) {
+    bottom: 60vh;
+    right: 20vw;
+    animation-delay: 3s;
+}
+
+#squares li:nth-child(4) {
+    bottom: 60vh;
+    right: 60vw;
+    animation-delay: 2s;
+}
+
+#squares li:nth-child(5) {
+    bottom: 25vh;
+    right: 40vw;
+    animation-delay: 5s;
+}
+
+#squares li:nth-child(6) {
+    bottom: 10vh;
+    right: 10vw;
+    animation-delay: 1s;
+}
+
+@keyframes square {
+    0% {
+        transform: scale(0) rotateY(0deg);
+    }
+    100% {
+        transform: scale(2) rotateY(1000deg);
+    }
+}
+
+#circles li {
+    border-radius: 50%;
+    bottom:0px;
+    width:30px;
+    height:30px;
+    animation: circle 6s linear infinite;
+}
+
+#circles li:nth-child(1){
+    left:50vw;
+}
+
+#circles li:nth-child(2){
+    left:10vw;
+}
+
+#circles li:nth-child(3){
+    left:30vw;
+}
+
+#circles li:nth-child(4){
+    left:66vw;
+}
+
+#circles li:nth-child(5){
+    left:72vw;
+}
+
+#circles li:nth-child(6){
+    left:90vw;
+}
+
+@keyframes circle {
+    0% {
+        transition: scale(0) rotate(0deg);
+        bottom: 0vh;
+        border-radius: 25%;
+        opacity: 1;
+    }
+    25% {
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2) rotateY(1000deg);
+        bottom:90vh;
+        opacity: 0.1;
+    }
+}
