@@ -1,0 +1,37 @@
+{
+    "students": [
+        {
+            "name": "rafique mohammed",
+            "age": 33,
+            "isdev": true,
+            "skills": ["html","css","javascript","Java","c","c++"],
+            "address": {
+                "city": "Nandyal",
+                "State": "AP"
+                }
+        },
+
+        {
+            "name": "charan reddy",
+            "age": 19,
+            "isdev": true,
+            "skills": ["c","Java","Sql","html","Css","javascript"],
+            "address": {
+                "city": "Nandyal",
+                "State":"AP"
+                }
+        },
+
+        {
+            "name": "Pranay Thaduri",
+            "age": 20,
+            "isdev":true,
+            "skills": ["html","css","javascript","java","c"],
+            "address": {
+                "city": "Hyderabad",
+                "State": "Ts"
+                }
+        }
+
+    ]
+}
