@@ -9,8 +9,8 @@
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #89f7fe, #66a6ff);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: flex; /*even without this there will be no effect because all are blocks*/ 
+    flex-direction: column;/*if other elements are present they stack horizantly if we dont use this*/
   }
   
   /* Header styling */
