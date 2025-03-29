@@ -1,0 +1,104 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+  }
+  .header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Main container styling */
+  .container {
+    width: 360px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .container input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #e2e2e2;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  .container input:focus {
+    border-color: #66a6ff;
+  }
+  
+  /* Calculate button */
+  .container button {
+    width: 90%;
+    margin: 15px auto 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #66a6ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .container button:hover {
+    background-color: #4f8ad9;
+    transform: translateY(-2px);
+  }
+  .container button:active {
+    background-color: #3b73b4;
+    transform: translateY(0);
+  }
+  
+  /* Result section */
+  .result {
+    margin-top: 20px;
+    text-align: left;
+  }
+  .result ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .result li {
+    margin: 8px 0;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+  }
+  /* Bullet points before each result line */
+  .result li::before {
+    content: "•";
+    color: #66a6ff;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 1;
+  }
+  

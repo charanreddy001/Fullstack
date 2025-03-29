@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Interest Calculator</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <h1>Simple Interest Calculator</h1>
+  </div>
+
+  <div class="container">
+    
+    <input type="number" id="principal" placeholder="Principal" />
+    <input type="number" id="years" placeholder="Number of Years" />
+    <input type="number" id="rate" placeholder="Rate of Interest (%)" />
+
+    
+    <button onclick="calculateSI()">Calculate</button>
+
+    <div class="result">
+      <ul>
+        <li id="principalVal"></li>
+        <li id="yearVal"></li>
+        <li id="rateVal"></li>
+        <li id="siVal"></li>
+        <li id="amountVal"></li>
+      </ul>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
